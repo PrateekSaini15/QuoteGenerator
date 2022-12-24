@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*================================ 
+CUSTOM PROPERTIES
+================================*/
+
+:root {
+	-ff-roboto: 'Roboto', sans-serif;
+	-fs-400: 1rem;
+}
+
+
+/*================================ 
+CSS RESET
+================================*/
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: var(--ff-roboto);
+	background-image: url('background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+/*================================ 
+LAYOUT
+================================*/
+
+main {
+	display: grid;
+	place-items: center;
+	height: 100vh;
+}
+
+
+/*================================ 
+UTITLITY CLASSES
+================================*/
+
+.fs-400 {
+	font-size: var(--fs-400);
+}
+
+
+/*================================ 
+COMPONENTS
+================================*/
+
+.card {
+	max-width: 90%;
+}
+
+.card__heading {
+	opacity: transparent;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.card__heading h2 {
+	display: inline;
+	background-color: black;
+	color: white;
+	padding: 0.5em 1em;
+	border-radius: 10px;
+	border: 1px solid white;
+}
+
+.card__body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	padding: 2em;
+	border-radius: 10px;
+}
+
+.quote {
+	line-height: 1.5em;
+	text-align: center;
+}
+
+.author {
+	margin: 1rem 0;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	color: red;
+	text-align: center;
+}
+
+.btn {
+	background-color: black;
+	color: white;
+	padding: 0.5em;
+	border-radius: 5px;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: rgb(68, 66, 66);
+	border: 1px solid white;
+}
+
+/*================================ 
+GENERAL
+================================*/
+
+
+@media only screen and (min-width: 960px) {
+	body {
+		font-size: 18px;
+	}
+
+	.card {
+		max-width: 31.25rem;
+	}
+
+}
